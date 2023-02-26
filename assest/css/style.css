@@ -1,0 +1,247 @@
+/* Fonts */
+@import url(../ccs/clash-display.css);
+
+/* Variables */
+:root {
+    --c-dark: #212529;
+    --c-brand: #4e57d4;
+    --c-brand-light:  #6970dd;
+    --c-brand-rgb: 78, 87, 212;
+    --c-body: #727272;
+    --font-base: "ClashDisplay", sans-serif;
+    --box-shadow: 0px 15px 25px rgba(0,0,0,0.08);
+    --transition: all 0.5s ease;
+}
+
+/* Reset & Helpers */
+body {
+    font-family: var(--font-base);
+    line-height: 1.7;
+    color: var(--c-body);
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 250;
+}
+
+a {
+    text-decoration: none;
+    color: var(--c-brand);
+    transition: var(--transition);
+}
+
+a:hover {
+    color:  var(--c-brand-light);
+}
+
+imag {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-padding {
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: var(--box-shadow);
+}
+.navbar-nav .nav-link {
+    font-weight:500;
+    color: var(--c-dark);
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--c-brand);
+}
+.imagen {
+    margin-left: 0px;
+    width: 150px;
+    
+}
+
+
+/* BTN */
+.btn {
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 10px 24px;
+}
+
+.btn-brand {
+    background-color:  var(--c-brand);
+    color: white;
+}
+
+
+.btn-brand:hover {
+    background-color: var(--c-brand-light);
+    border-color: var(--c-brand-light);
+
+}
+
+/*Hero*/
+#Hero {
+    background-image: url(../images/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+    
+
+.nav-pills {
+    background-color: rgb(102, 102, 253);
+}
+
+/*Our*/
+.Our { 
+  background-image: ;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+ }
+
+ .h1D {  
+    color: #212529;
+    font-size: 50px;
+    font-weight: 600;
+ }
+
+ p { 
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 22px;
+     padding: 10px;
+  }
+    
+  .row { 
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .our-col { 
+     flex-basis: 31%;
+     background: #fff3f3;
+     border-radius: 10px;
+     margin-bottom: 5%;
+     padding: 20px 12px;
+     box-sizing: border-box;
+     transition: 0.5s;
+  }
+  h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+  } 
+
+  .our-col:hover { 
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2, green, blue, alpha);
+}
+
+/*destination*/
+
+.destinations {
+    text-align: center;
+    color: #212529;
+}
+
+@media (max-width: 700px) { 
+ .row { 
+    flex-direction: column;
+}
+}
+.our-col {
+    flex-basis: 32;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.our-col img {
+ width: 100%;
+ display: block;
+}
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0,5s;
+}
+.layer:hover {
+    background:  rgba(181, 209, 223, 0.7);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #212529;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity:0;
+    transition:0.5s
+    }
+    .layer:hover h3{
+        bottom: 49%;
+        opacity: 1;
+    }
+    
+    
+    /*Form*/
+
+.form-signup {
+    
+    margin: 0 auto;
+    max-width: 300px;
+
+ }
+
+ .container { 
+    padding-top: 100px;
+ }
+ .form-signup h2 { 
+    font-size: 500;
+    text-align: center;
+    font-weight: 600;
+    color:#212529
+    }
+/*----footer------*/
+    
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+
+}
+
+.footer h4 {
+    
+    color: #212529;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons {
+   
+    cursor: pointer;
+    
+    color:#6970dd
+
+    
+}
+
